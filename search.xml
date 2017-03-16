@@ -59,6 +59,7 @@
 <p>之后，当我们使用 <code>hexo generate</code> 时，会自动生成 <code>sitemap.xml</code> 文件。</p>
 <h1 id="注册免费域名"><a href="#注册免费域名" class="headerlink" title="注册免费域名"></a>注册免费域名</h1><p>​    在freenom上注册了一个免费的域名<a href="yangchao.tk">yangchao.tk</a>，注意注册时不要选择域名跳转和freenom自己的DNS服务，使用DNSPOD的DNS服务，详细的教程见<a href="http://www.tuicool.com/articles/NrUrY33" target="_blank" rel="external">为你的Github Pages博客绑定一个免费顶级域名吧</a>。</p>
 <p>​    然后在github的仓库上设置CNAME，不需要手动生成，在settings中找到Custom domain，然后填入yangchao.tk，save，会在根目录下自动生成CNAME文件。大功告成，现在访问yangchaosword.github.io会自动跳转到yangchao.tk。</p>
+<p>​    注意，要在source目录下同样建一个CNAME文件，其中写入yangchao.tk，不然每次部署之后，会把仓库中的CNAME文件删除。</p>
 <h1 id="其他一些说明"><a href="#其他一些说明" class="headerlink" title="其他一些说明"></a>其他一些说明</h1><p>​    1） Hexo使用的markdown语法好像比较严格，注意#的后面要使用空格才能识别为标题。</p>
 <p>​    2）tips</p>
 <p>​    hexo现在支持更加简单的命令格式了，比如：</p>
