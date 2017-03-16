@@ -46,6 +46,9 @@
 <p><code>$ hexo new page &quot;about&quot;</code></p>
 <p>​    在hexo\source\下会生成about目录，里面有个index.md，直接编辑就可以了，然后在主题的_config.yml中将其配置显示出来。<br>​    上述步骤，也可以手工生成，在hexo\source\下手工新建about和index.md也是完全等价的。</p>
 <p>​    在front-matter中添加layout: page和commments: false</p>
+<p>4）设置网站Favicon，</p>
+<p>​    将favicon.ico放在Hexo根目录的source文件夹下，建议的大小：32px*32px。</p>
+<p>​    若要为网站添加苹果设备图标，请将命名为apple-touch-icon.png的图片放在同样的位置，建议的大小：114px*114px。</p>
 <h1 id="添加搜索框"><a href="#添加搜索框" class="headerlink" title="添加搜索框"></a>添加搜索框</h1><p>​    使用<a href="https://github.com/PaicHyperionDev/hexo-generator-search" target="_blank" rel="external">use hexo-generator-search</a></p>
 <p>​    <code>$ npm install hexo-generator-search --save</code></p>
 <p>​   在_config.yml中添加</p>
@@ -78,7 +81,7 @@
         
         <tags>
             
-            <tag> 博客 </tag>
+            <tag> 笔记 </tag>
             
         </tags>
         
