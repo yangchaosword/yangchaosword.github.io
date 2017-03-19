@@ -32,8 +32,13 @@
 <p>​    当然，也可以手动添加Markdown文件在source_deploy文件夹下。</p>
 <p>​    修改post模板(在scaffolds目录下)，将front-matter中添加categories: </p>
 <p>​    注意，在文章的front-matter中添加toc: true，可以使文章显示目录。</p>
+<h1 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h1><p>​    写完文章后，需要生成所需的网页文件等，只需一条命令：</p>
+<p><code>$ hexo generate</code></p>
 <h1 id="本地发布"><a href="#本地发布" class="headerlink" title="本地发布"></a>本地发布</h1><p>​    进行本地发布：<br><code>$ hexo server</code><br>​    打开浏览器，输入：<br><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>​    我们可以在浏览器端看到我们搭建好的博客和发布的文章</p>
 <h1 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h1><p>​    安装 hexo-deployer-git ：<br> <code>$ cnpm install hexo-deployer-git --save</code><br>​    最后利用hexo指令发布到github：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
+<p>​    为了方便起见，在写完文章后可以直接使用命令:</p>
+<p><code>$ hexo g -d</code>或者<code>hexo d -g</code></p>
+<p>​    这两条命令可以直接生成文件，并且部署到github上</p>
 <h1 id="使用主题"><a href="#使用主题" class="headerlink" title="使用主题"></a>使用主题</h1><p>​    看到别人的<a href="http://selfboot.cn/" target="_blank" rel="external">博客</a>使用的主题不错，是<a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="external">屠城修改的Maupassant主题</a>，文档见<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简——Hexo简洁主题推荐</a><br>​    安装主题和渲染器：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
 <p>编辑Hexo目录下的 _config.yml，将theme的值改为maupassant。<br>主题的配置在themes目录下主题所在的目录，修改 _config.yml即可。</p>
@@ -68,7 +73,8 @@
 <p>​     <code>hexo s</code> ==  <code>hexo server</code> </p>
 <p>​     <code>hexo n</code> ==  <code>hexo new</code> </p>
 <p>​    3）注意，免费的github仓库只有300m，不要在博客中储存太多的图片，可以考虑使用七牛的图床。</p>
-<p>​    4）除了文中给出的链接，本文还参考了一些博客和文档，可能有遗漏的，请见谅：<br>​    [1]<a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">20分钟教你使用hexo搭建github博客</a></p>
+<p>​    4)   在更换主题或者生成的网页有些问题时，可以使用命令<code>$ hexo clean</code>来清空所有生成的文件。</p>
+<p>​    5）除了文中给出的链接，本文还参考了一些博客和文档，可能有遗漏的，请见谅：<br>​    [1]<a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">20分钟教你使用hexo搭建github博客</a></p>
 <p>​    [2]<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo官方文档</a></p>
 <p>​    [3]<a href="http://selfboot.cn/2014/11/30/jekyll_to_hexo/" target="_blank" rel="external">更换博客系统——从jekyll到hexo</a></p>
 <p>​    [4]<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></p>
