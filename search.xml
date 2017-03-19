@@ -7,7 +7,6 @@
       <title><![CDATA[Hexo折腾笔记]]></title>
       <url>http://yangchaosword.github.io/2017/03/15/Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</url>
       <content type="html"><![CDATA[<h1 id="安装nodejs开发环境"><a href="#安装nodejs开发环境" class="headerlink" title="安装nodejs开发环境"></a>安装nodejs开发环境</h1><h2 id="安装nvm"><a href="#安装nvm" class="headerlink" title="安装nvm"></a>安装nvm</h2><p>​    由于连国外网速太慢，使用 proxychains /bin/bash<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ wget https://raw.github.com/creationix/nvm/master/install.sh </div><div class="line">$ chmod +x install.sh</div><div class="line">$ ./install.sh</div></pre></td></tr></table></figure></p>
-<p>​    在.bashrc文件末尾添加 source  ～/.nvm/nvm.sh</p>
 <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p><code>$ nvm install stable</code></p>
 <h2 id="npm-换成淘宝源"><a href="#npm-换成淘宝源" class="headerlink" title="npm 换成淘宝源"></a>npm 换成淘宝源</h2><p>​    因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，所以为了避免麻烦，使用淘宝的镜像，其官网说明：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。”</p>
 <p>​    淘宝npm镜像官方网址：<a href="http://npm.taobao.org/" target="_blank" rel="external">http://npm.taobao.org</a></p>
